@@ -1,17 +1,16 @@
-var funcionarios = [
-    "Larissa",
-    "Renato",
-    "Mariana",
-    "Luciane",
-    "João"
+var disciplinas = [
+    "Português",    // índice 0
+    "Matemática",   // índice 1
+    "História",     // índice 2
+    "Geografia",    // índice 3
+    "Química",      // índice 4
+    "Física",       // índice 5
+    "Inglês"        // índice 6
 ];
 
-var novos_funcionarios = [
-    "Fabiano",
-    "Lívia"
-];
+disciplinas[6] = "Espanhol"
+;
 
-funcionarios[4] = novos_funcionarios[1];
-funcionarios[2] = novos_funcionarios[0];
 
-console.log(funcionarios);
+console.log(disciplinas)
+;
