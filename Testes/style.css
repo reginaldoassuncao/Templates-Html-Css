@@ -1,21 +1,11 @@
-* {
-    padding: 0;
-    margin: 0;
+.col-5,
+.col-7 {
+    background-color: green;
+    border: 1px solid #FFFFFF;
+    padding: 78;
 }
 
-.topo {
-    background-color: aquamarine;
-    width: 100%;   
-   
-}
-
-.menu {
-    list-style: none;
+.nav-link {
     display: flex;
-    justify-content: space-around;
-    
-}
-
-.menu a {
-    text-decoration: none;
+    flex-direction: column;
 }

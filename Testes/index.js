@@ -1,16 +1,10 @@
-var disciplinas = [
-    "Português",    // índice 0
-    "Matemática",   // índice 1
-    "História",     // índice 2
-    "Geografia",    // índice 3
-    "Química",      // índice 4
-    "Física",       // índice 5
-    "Inglês"        // índice 6
-];
+import entradaDados from "readline-sync"
 
-disciplinas[6] = "Espanhol"
-;
+let valor_produto = 500;
+let total_parcelas = entradaDados.question("Digite o numero de parcelas: ")
 
-
-console.log(disciplinas)
-;
+for (let contador =1; contador <= total_parcelas; contador++)
+{   
+    let valor_parcela = valor_produto / contador;
+    console.log("Númer0 de parcelas: " + contador + "- valor de parcela: R$ " +valor_parcela.toFixed(2));
+};
