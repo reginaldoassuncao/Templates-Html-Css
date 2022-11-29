@@ -1,41 +1,28 @@
-let alunos = [
-    {id: 1, nome: "Bruna", media: 8},
-    {id: 2, nome: "Laura", media: 7},
-    {id: 3, nome: "José", media: 5},
-    {id: 4, nome: "Guilherme", media: 4},
-    {id: 5, nome: "Rafael", media: 10},
-];
+let carro = { nome: "Argo", marca: "Fiat", preco: 50000, ano: 2020 };
 
-let contador = 0;
+let percentual_desconto = 5;
 
-do {
+for ( let propriedade in carro ) {
 
-    let aluno = alunos[contador];
+    if ( propriedade == "preco" ) {
 
-    contador++;
+        let preco = propriedade;
 
-    if ( aluno.media < 6 ) {
-        continue;
+        let desconto = ( carro[preco] * percentual_desconto ) / 100;
+
+        let novo_preco = carro[preco] - desconto;
+
+        console.log("novo preço: R$" + novo_preco + ",00");
+
+    } else {
+
+        console.log(propriedade + ": " + carro[propriedade]);
+
     }
 
-    console.log("Id: " + aluno.id);
-    console.log("Nome: " + aluno.nome);
-    console.log("Média: " + aluno.media);
-    console.log("\n");
+}
 
-} while ( contador < alunos.length );
-
-
-// Id: 1
-// Nome: Bruna
-// Média: 8
-
-
-// Id: 2
-// Nome: Laura
-// Média: 7
-
-
-// Id: 5
-// Nome: Rafael
-// Média: 10
+// nome: Argo
+// marca: Fiat
+// Novo preço: R$47500,00
+// ano: 2020
