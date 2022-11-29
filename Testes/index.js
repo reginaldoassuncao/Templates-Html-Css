@@ -8,18 +8,34 @@ let alunos = [
 
 let contador = 0;
 
-while ( contador < alunos.length ) {
+do {
 
     let aluno = alunos[contador];
 
     contador++;
 
-    if ( aluno.media === 0) {
-        break;
+    if ( aluno.media < 6 ) {
+        continue;
     }
 
     console.log("Id: " + aluno.id);
     console.log("Nome: " + aluno.nome);
     console.log("Média: " + aluno.media);
     console.log("\n");
-}
+
+} while ( contador < alunos.length );
+
+
+// Id: 1
+// Nome: Bruna
+// Média: 8
+
+
+// Id: 2
+// Nome: Laura
+// Média: 7
+
+
+// Id: 5
+// Nome: Rafael
+// Média: 10
