@@ -1,13 +1,20 @@
-let cliente = [
-    { id: 1, nome: "Reginaldo", telefone: "31986553452"},
-    { id: 2, nome: "Thurram", telefone: "55667738"}
-];
+let status = 0;
 
-function teste(){
-    for(let i = 0; i < 1; i++) {
-        console.log(cliente[0])
-    }
+switch
+(status)
+{
     
-}; 
-
-teste();
+case
+ 1:
+        console.log("Ativo");
+        
+break
+;
+    
+case
+ 0:
+        console.log("Inativo");
+        
+break
+;
+}
