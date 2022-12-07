@@ -1,5 +1,10 @@
-let estoque = "disponivel"
+let livros = ["Dom Quixote","Guerra e Paz ","A Montanha Mágica","Cem Anos de Solidão"];
 
-let disponivel = (estoque) ? "disponível" : "indisponível";
+let contador = 1;
 
-console.log(disponivel)
+while ( contador < livros.length ) {
+
+    console.log(livros[contador]);
+    contador++;
+
+}
