@@ -1,10 +1,7 @@
-let livros = ["Dom Quixote","Guerra e Paz ","A Montanha Mágica","Cem Anos de Solidão"];
+function Greeting({ name }) {
+  return <h1>Hello, {name}</h1>;
+}
 
-let contador = 1;
-
-while ( contador < livros.length ) {
-
-    console.log(livros[contador]);
-    contador++;
-
+export default function App() {
+  return <Greeting name="world" />
 }
